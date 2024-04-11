@@ -25,8 +25,11 @@ Technologies that I want to learn and familiar myself with from this project:
 
 ### Learned so far
 DBT is command-line tool that enables data analysts and engineers to transform data in their warehouses more effectively. It provides a consistent and standardized approach to data transformation and analysis, making it easier for data analysts and engineers to work with data.
+
 Azure Data Factory is a cloud-based data integration service developed by Microsoft as part of their Azure platform.  It allows organizations to create, schedule, and manage data pipelines that can move and transform data from various sources to different destinations. ADF offers several key features, including data movement and transformation activities, data flow transformations, integration with other Azure services, data monitoring and management, and support for hybrid data integration.
+
 Azure Databricks is a cloud-based analytics platform built on top of Apache Spark that simplifies the process of data engineering, data exploration, and model training. It offers an interactive workspace that allows users to easily create, manage, and deploy big data processing and machine learning workloads.
+
 Azure Data Lake Storage Gen 2  is a cloud-based repository for both structured and unstructured data, designed for highly scalable big data analytics solutions.  It combines the management and scalability features of Azure Blob Storage and Azure Data Lake Storage Gen1, including a hierarchical file system with granular security and lower-cost tiered storage. It offers highly scalable storage, processing capabilities, high availability, and disaster recovery.
 
 ### Appendix
