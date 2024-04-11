@@ -449,3 +449,179 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m12:45:14.231764 [debug] [MainThread]: On debug: Close
 [0m12:45:14.697084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024725AA1760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247262478B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000247416F4F40>]}
 [0m12:45:14.697084 [debug] [MainThread]: Flushing usage events
+[0m13:18:13.721106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DFE4DF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DF697EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DF697CA0>]}
+
+
+============================== 13:18:13.725105 | d008a373-7438-40a9-9770-539068180e44 ==============================
+[0m13:18:13.725105 [info ] [MainThread]: Running with dbt=1.7.11
+[0m13:18:13.726107 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'log_path': 'C:\\Users\\PC\\OneDrive - Universiti Malaya\\Documents\\Github Project\\medallion-Azure-DBT-spark\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt snapshot', 'send_anonymous_usage_stats': 'True'}
+[0m13:18:14.904231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd008a373-7438-40a9-9770-539068180e44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DF6CFEB0>]}
+[0m13:18:14.985099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd008a373-7438-40a9-9770-539068180e44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230FBBA79A0>]}
+[0m13:18:14.986111 [info ] [MainThread]: Registered adapter: databricks=1.7.13
+[0m13:18:14.998139 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m13:18:15.000139 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:18:15.001138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd008a373-7438-40a9-9770-539068180e44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230FBBA7C10>]}
+[0m13:18:16.148289 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.medallion_dbt_spark.example
+[0m13:18:16.154287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd008a373-7438-40a9-9770-539068180e44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230FBD470D0>]}
+[0m13:18:16.168289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd008a373-7438-40a9-9770-539068180e44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230FBD470A0>]}
+[0m13:18:16.169288 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 538 macros, 0 groups, 0 semantic models
+[0m13:18:16.170288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd008a373-7438-40a9-9770-539068180e44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230FBB60DF0>]}
+[0m13:18:16.172287 [info ] [MainThread]: 
+[0m13:18:16.173287 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:18:16.174289 [debug] [MainThread]: Command end result
+[0m13:18:16.186316 [debug] [MainThread]: Command `dbt snapshot` succeeded at 13:18:16.186316 after 2.52 seconds
+[0m13:18:16.187317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230DFE4DF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230FB950A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230FBB60340>]}
+[0m13:18:16.188317 [debug] [MainThread]: Flushing usage events
+[0m13:21:04.326070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D333E112B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D333669280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D33364A0A0>]}
+
+
+============================== 13:21:04.330069 | 1523a27c-32b8-4ccb-843b-9d96adf8df53 ==============================
+[0m13:21:04.330069 [info ] [MainThread]: Running with dbt=1.7.11
+[0m13:21:04.331070 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\PC\\OneDrive - Universiti Malaya\\Documents\\Github Project\\medallion-Azure-DBT-spark\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt snapshot', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:21:05.505664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1523a27c-32b8-4ccb-843b-9d96adf8df53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3336A1580>]}
+[0m13:21:05.585888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1523a27c-32b8-4ccb-843b-9d96adf8df53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D34F933970>]}
+[0m13:21:05.586798 [info ] [MainThread]: Registered adapter: databricks=1.7.13
+[0m13:21:05.598795 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m13:21:05.703268 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:21:05.704269 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:21:05.705270 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.medallion_dbt_spark.example
+[0m13:21:05.711268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1523a27c-32b8-4ccb-843b-9d96adf8df53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D34FD91EB0>]}
+[0m13:21:05.723799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1523a27c-32b8-4ccb-843b-9d96adf8df53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D333695D60>]}
+[0m13:21:05.724794 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 538 macros, 0 groups, 0 semantic models
+[0m13:21:05.725798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1523a27c-32b8-4ccb-843b-9d96adf8df53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D34F99E250>]}
+[0m13:21:05.727795 [info ] [MainThread]: 
+[0m13:21:05.727795 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:21:05.728799 [debug] [MainThread]: Command end result
+[0m13:21:05.739795 [debug] [MainThread]: Command `dbt snapshot` succeeded at 13:21:05.738796 after 1.47 seconds
+[0m13:21:05.739795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D333E112B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D34FD56FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D34FA892E0>]}
+[0m13:21:05.740794 [debug] [MainThread]: Flushing usage events
+[0m13:22:55.675234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026643061760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000266438088B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000266428B6430>]}
+
+
+============================== 13:22:55.679233 | cf20c1a4-0e66-47f2-bb6a-14f53f071d78 ==============================
+[0m13:22:55.679233 [info ] [MainThread]: Running with dbt=1.7.11
+[0m13:22:55.680234 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\PC\\OneDrive - Universiti Malaya\\Documents\\Github Project\\medallion-Azure-DBT-spark\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt snapshot', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:22:56.851995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cf20c1a4-0e66-47f2-bb6a-14f53f071d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000266428F1190>]}
+[0m13:22:56.933074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cf20c1a4-0e66-47f2-bb6a-14f53f071d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002665ECEF6D0>]}
+[0m13:22:56.934073 [info ] [MainThread]: Registered adapter: databricks=1.7.13
+[0m13:22:56.948073 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m13:22:57.058300 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:22:57.059304 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:22:57.059861 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.medallion_dbt_spark.example
+[0m13:22:57.065827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cf20c1a4-0e66-47f2-bb6a-14f53f071d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002665EFE1CD0>]}
+[0m13:22:57.078823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cf20c1a4-0e66-47f2-bb6a-14f53f071d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002665EE56D00>]}
+[0m13:22:57.079824 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 538 macros, 0 groups, 0 semantic models
+[0m13:22:57.079824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cf20c1a4-0e66-47f2-bb6a-14f53f071d78', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002665EE56BE0>]}
+[0m13:22:57.081825 [info ] [MainThread]: 
+[0m13:22:57.082827 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:22:57.083824 [debug] [MainThread]: Command end result
+[0m13:22:57.093370 [debug] [MainThread]: Command `dbt snapshot` succeeded at 13:22:57.093370 after 1.47 seconds
+[0m13:22:57.094369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026643061760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002665EBD4D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002665ECEC4C0>]}
+[0m13:22:57.095371 [debug] [MainThread]: Flushing usage events
+[0m13:25:01.402335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002809DFF1C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002809E8457F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002809D82ACD0>]}
+
+
+============================== 13:25:01.406664 | e90f5b1d-9b24-41c2-88ea-3fc42675639b ==============================
+[0m13:25:01.406664 [info ] [MainThread]: Running with dbt=1.7.11
+[0m13:25:01.407332 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\PC\\OneDrive - Universiti Malaya\\Documents\\Github Project\\medallion-Azure-DBT-spark\\logs', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt snapshot', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:25:02.589386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e90f5b1d-9b24-41c2-88ea-3fc42675639b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002809CEBEAC0>]}
+[0m13:25:02.671798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e90f5b1d-9b24-41c2-88ea-3fc42675639b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B9D556D0>]}
+[0m13:25:02.672795 [info ] [MainThread]: Registered adapter: databricks=1.7.13
+[0m13:25:02.685311 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m13:25:02.696498 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m13:25:02.697317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e90f5b1d-9b24-41c2-88ea-3fc42675639b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B9C4F9D0>]}
+[0m13:25:03.804321 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.medallion_dbt_spark.staging
+- models.medallion_dbt_spark.example
+[0m13:25:03.811321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e90f5b1d-9b24-41c2-88ea-3fc42675639b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B9F650D0>]}
+[0m13:25:03.824362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e90f5b1d-9b24-41c2-88ea-3fc42675639b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B9F65100>]}
+[0m13:25:03.825364 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 538 macros, 0 groups, 0 semantic models
+[0m13:25:03.826365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e90f5b1d-9b24-41c2-88ea-3fc42675639b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B9EEF190>]}
+[0m13:25:03.828365 [info ] [MainThread]: 
+[0m13:25:03.829360 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:25:03.830365 [debug] [MainThread]: Command end result
+[0m13:25:03.841414 [debug] [MainThread]: Command `dbt snapshot` succeeded at 13:25:03.841414 after 2.49 seconds
+[0m13:25:03.841414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002809DFF1C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B9D43460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000280B9D7F7F0>]}
+[0m13:25:03.842411 [debug] [MainThread]: Flushing usage events
+[0m13:27:43.513775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002432072DF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002431FF78EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002431FF78CA0>]}
+
+
+============================== 13:27:43.517774 | e19e2740-deb5-48f6-ac34-2f1dc344dffc ==============================
+[0m13:27:43.517774 [info ] [MainThread]: Running with dbt=1.7.11
+[0m13:27:43.518780 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\PC\\OneDrive - Universiti Malaya\\Documents\\Github Project\\medallion-Azure-DBT-spark\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt snapshot', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:27:44.702184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e19e2740-deb5-48f6-ac34-2f1dc344dffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002431FF5A8E0>]}
+[0m13:27:44.783797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e19e2740-deb5-48f6-ac34-2f1dc344dffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002433C484A90>]}
+[0m13:27:44.784797 [info ] [MainThread]: Registered adapter: databricks=1.7.13
+[0m13:27:44.797798 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m13:27:44.808918 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m13:27:44.809922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e19e2740-deb5-48f6-ac34-2f1dc344dffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002433C428970>]}
+[0m13:27:45.926130 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m13:27:45.933130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e19e2740-deb5-48f6-ac34-2f1dc344dffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002433C6B0FA0>]}
+[0m13:27:45.946838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e19e2740-deb5-48f6-ac34-2f1dc344dffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002433C6B0FD0>]}
+[0m13:27:45.947839 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 538 macros, 0 groups, 0 semantic models
+[0m13:27:45.948838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e19e2740-deb5-48f6-ac34-2f1dc344dffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002433C486550>]}
+[0m13:27:45.950845 [info ] [MainThread]: 
+[0m13:27:45.950845 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:27:45.951839 [debug] [MainThread]: Command end result
+[0m13:27:45.962840 [debug] [MainThread]: Command `dbt snapshot` succeeded at 13:27:45.962840 after 2.50 seconds
+[0m13:27:45.963839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002432072DF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002433C3ACB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002433C4846A0>]}
+[0m13:27:45.964839 [debug] [MainThread]: Flushing usage events
+[0m13:30:04.750185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C6CA12B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C64F9280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C64DA0A0>]}
+
+
+============================== 13:30:04.753700 | 15f05b76-e7e8-4e93-bcea-c1362c441322 ==============================
+[0m13:30:04.753700 [info ] [MainThread]: Running with dbt=1.7.11
+[0m13:30:04.755221 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\PC\\OneDrive - Universiti Malaya\\Documents\\Github Project\\medallion-Azure-DBT-spark\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt snapshot', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:30:05.949390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '15f05b76-e7e8-4e93-bcea-c1362c441322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C6531580>]}
+[0m13:30:06.031740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '15f05b76-e7e8-4e93-bcea-c1362c441322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C64C9B20>]}
+[0m13:30:06.033259 [info ] [MainThread]: Registered adapter: databricks=1.7.13
+[0m13:30:06.045739 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m13:30:06.057210 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m13:30:06.058213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '15f05b76-e7e8-4e93-bcea-c1362c441322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229E29A9820>]}
+[0m13:30:07.170276 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.medallion_dbt_spark.staging
+[0m13:30:07.178278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '15f05b76-e7e8-4e93-bcea-c1362c441322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229E2C3C0D0>]}
+[0m13:30:07.191757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '15f05b76-e7e8-4e93-bcea-c1362c441322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229E2C3C100>]}
+[0m13:30:07.191757 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 538 macros, 0 groups, 0 semantic models
+[0m13:30:07.192759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '15f05b76-e7e8-4e93-bcea-c1362c441322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229E29F3970>]}
+[0m13:30:07.194760 [info ] [MainThread]: 
+[0m13:30:07.194760 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:30:07.195758 [debug] [MainThread]: Command end result
+[0m13:30:07.206325 [debug] [MainThread]: Command `dbt snapshot` succeeded at 13:30:07.206325 after 2.51 seconds
+[0m13:30:07.207321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229C6CA12B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229E29B36A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229E29C2190>]}
+[0m13:30:07.207321 [debug] [MainThread]: Flushing usage events
+[0m13:30:33.315054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135674C12E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013566D192B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013566D19310>]}
+
+
+============================== 13:30:33.318054 | 9c01b04b-8d01-4f87-a5b2-4fa1eb62bee4 ==============================
+[0m13:30:33.318054 [info ] [MainThread]: Running with dbt=1.7.11
+[0m13:30:33.319056 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\PC\\OneDrive - Universiti Malaya\\Documents\\Github Project\\medallion-Azure-DBT-spark\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt snapshot', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:30:34.566875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9c01b04b-8d01-4f87-a5b2-4fa1eb62bee4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013566D51880>]}
+[0m13:30:34.649600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9c01b04b-8d01-4f87-a5b2-4fa1eb62bee4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001350322C220>]}
+[0m13:30:34.650600 [info ] [MainThread]: Registered adapter: databricks=1.7.13
+[0m13:30:34.663116 [debug] [MainThread]: checksum: 1b58ec263fbd34ee8091684d6a2f6c1ad2902b1459e632a74eb63768af36ddb7, vars: {}, profile: , target: , version: 1.7.11
+[0m13:30:34.674117 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m13:30:34.675115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9c01b04b-8d01-4f87-a5b2-4fa1eb62bee4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135032015E0>]}
+[0m13:30:35.798285 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.medallion_dbt_spark
+[0m13:30:35.804283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9c01b04b-8d01-4f87-a5b2-4fa1eb62bee4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135033FFF40>]}
+[0m13:30:35.818351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9c01b04b-8d01-4f87-a5b2-4fa1eb62bee4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135033FFF70>]}
+[0m13:30:35.818351 [info ] [MainThread]: Found 0 sources, 0 exposures, 0 metrics, 538 macros, 0 groups, 0 semantic models
+[0m13:30:35.819347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9c01b04b-8d01-4f87-a5b2-4fa1eb62bee4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013503129D30>]}
+[0m13:30:35.821352 [info ] [MainThread]: 
+[0m13:30:35.821352 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:30:35.822350 [debug] [MainThread]: Command end result
+[0m13:30:35.833874 [debug] [MainThread]: Command `dbt snapshot` succeeded at 13:30:35.832923 after 2.58 seconds
+[0m13:30:35.833874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000135674C12E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001350320A1C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013503405CD0>]}
+[0m13:30:35.834873 [debug] [MainThread]: Flushing usage events
