@@ -10,7 +10,7 @@ Bronze Layer - The data that coming to the system is uncut ie raw data.
 
 Silver Layer - The data then have been transformed, changed and might been removed form the system.
 
-Gold Layer - The data that already ready to be used by different unit such as Business Intelligence and Analytics.
+Gold Layer - The data that ready to be used by different unit such as Business Intelligence and Analytics.
 
 ## Technologies
 
