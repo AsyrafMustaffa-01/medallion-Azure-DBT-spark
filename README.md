@@ -1,6 +1,6 @@
 # medallion-Azure-DBT-spark
  
-In this Project, I jsut want to familiarize myself with Microsoft Azure Technoogy. Thus i build a simple data engineering project that involve using Apache Spark, Azure Databricks, Data Build Tool (DBT) using Azure as my cloud provider. This project illustrate the process of data ingestion to the lakehouse, data integration with ADF and data transformation with Databricks, and DBT. I mainly learn about this technology from youtube, and online documentation. The data I use is sample data from Azure, AdventureWorks. 
+In this Project, I just want to familiarize myself with Microsoft Azure Technology. Thus I build a simple data engineering project that involve using Apache Spark, Azure Databricks, Data Build Tool (DBT) using Azure as my cloud provider. This project illustrate the process of data ingestion to the lakehouse, data integration with ADF and data transformation with Databricks, and DBT. I mainly learn about this technology from youtube, and online documentation. The data I use is sample data from Azure, AdventureWorks. 
 
 ## System Architecture
 
