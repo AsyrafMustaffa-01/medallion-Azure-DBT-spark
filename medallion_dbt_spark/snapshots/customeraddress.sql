@@ -1,13 +1,13 @@
-{% snapshot customer_snapshot %}
+{% snapshot customeraddress_snapshot %}
 
 {{
     config(
       file_format = "delta",
-      location_root = "/mnt/silver/customer",
+      location_root = "/mnt/silver/customeraddress",
 
       target_schema='snapshots',
       invalidate_hard_deletes=True,
-      unique_key='CustomerId',
+      unique_key="CustomerId||'-'||AddressId",
       strategy='check',
       check_cols='all'
     )
@@ -16,19 +16,9 @@
 with source_data as (
     select
         CustomerId,
-        NameStyle,
-        Title,
-        FirstName,
-        MiddleName,
-        LastName,
-        Suffix,
-        CompanyName,
-        SalesPerson,
-        EmailAddress,
-        Phone,
-        PasswordHash,
-        PasswordSalt
-    from {{ source('saleslt', 'customer') }}
+        AddressId,
+        AddressType
+    from {{ source('saleslt', 'customeraddress') }}
 )
 select *
 from source_data
