@@ -7,7 +7,9 @@ In this Project, I just want to familiarize myself with Microsoft Azure Technolo
 For this project i want to implement modern data engineering technique, the medallion architecture. This architecture allow us to ahve 3 layers of transformation:
 
 Bronze Layer - The data that coming to the system is uncut ie raw data.
+
 Silver Layer - The data then have been transformed, changed and might been removed form the system.
+
 Gold Layer - The data that already ready to be used by different unit such as Business Intelligence and Analytics.
 
 ## Technologies
